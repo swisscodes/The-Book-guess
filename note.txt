@@ -1,0 +1,40 @@
+from previous page
+******************************************************
+using println!, the explamation mark is part of the program, not a variable name, and it means we are calling
+a macro and not a function println!()
+know that using a ! means that you’re calling a macro instead of a normal function, 
+and that macros don’t always follow the same rules as functions.
+******************************************************
+
+this page Cargo
+******************************************************
+cargo new hello_cargo
+cargo is like npm
+so cargo new hello_cargo is like npm init
+
+We run cargo build to compile our program
+or compile and run with cargo run
+
+Cargo also provides a command called cargo check. 
+his command quickly checks your code to make sure it compiles but doesn’t produce an executable.
+
+Chapter Recap
+We can create a project using cargo new.
+We can build a project using cargo build.
+We can build and run a project in one step using cargo run.
+We can build a project without producing a binary to check for errors using cargo check.
+Instead of saving the result of the build in the same directory as our code, 
+Cargo stores it in the target/debug directory.
+
+
+Building for Release
+When your project is finally ready for release, you can use cargo build --release to compile it with optimizations. 
+This command will create an executable in target/release instead of target/debug.
+******************************************************
+
+
+******************************************************
+Guessing game chapter
+The number 0.8.3 is actually shorthand for ^0.8.3, which means any 
+version that is at least 0.8.3 but below 0.9.0.
+******************************************************
